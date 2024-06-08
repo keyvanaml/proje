@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+
+
+
+
+
+    <title>ثبت سفارش</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .gender-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+            .gender-group input[type="radio"] {
+                margin-right: 5px;
+            }
+
+        .btn-submit:hover {
+            background-color: #4CAF50;
+        }
+
+        .search-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>ثبت سفارش</h1>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="name">نام و نام خانوادگی:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">شماره تلفن:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nationalId">کد ملی:</label>
+                <input type="text" id="nationalId" name="list" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nationalId">آدرس:</label>
+                <input type="text" id="nationalId" name="nationalId" required>
+            </div>
+            <div class="form-group">
+                <label for="nationalId">کد تخفیف:</label>
+                <input type="text" id="nationalId" name="nationalId" required>
+
+                <div class="search-box">
+                    <input type="text" placeholder="جستجو کالا">
+                    <button type="submit">جستجو</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="city">شهر:</label>
+                <select id="city" name="city" required>
+                    <option value="">انتخاب کنید</option>
+                    <option value="tehran">تهران</option>
+                    <option value="mashhad">مشهد</option>
+                    <option value="esfahan">اصفهان</option>
+                    <option value="karaj">کرج</option>
+                </select>
+            </div>
+
+            <div class="gender-group">
+                <label>جنسیت:</label>
+                <input type="radio" id="gender-male" name="gender" value="male" required>
+                <label for="gender-male">مرد</label>
+                <input type="radio" id="gender-female" name="gender" value="female" required>
+                <label for="gender-female">زن</label>
+
+            </div>
+
+            <button type="submit" class="btn-submit">ثبت سفارش</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
